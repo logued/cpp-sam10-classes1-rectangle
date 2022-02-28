@@ -20,6 +20,10 @@
 
 // IMPLEMENTATION of constructors of the Rectangle class
 
+// The "Scope Resolution Qualifier :: " must be used to specify that the
+// constructor belongs to the class "Rectangle".  This applies to all
+// constructors and member function below.
+
 Rectangle::Rectangle() {     // default no-arg constructor, qualifier "::"
     width = 5;
     height = 5;
@@ -31,6 +35,7 @@ Rectangle::Rectangle(int a, int b) {
 }
 
 // IMPLEMENTATION of member functions of Rectangle class
+
 
 int Rectangle::area(void) {
     return width * height;
