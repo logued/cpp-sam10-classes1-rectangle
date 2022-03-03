@@ -25,13 +25,13 @@
 // constructors and member function below.
 
 Rectangle::Rectangle() {     // default no-arg constructor, qualifier "::"
-    width = 5;
-    height = 5;
+    this->width = 5;
+    this->height = 5;
 }
 
-Rectangle::Rectangle(int a, int b) {
-    width = a;
-    height = b;
+Rectangle::Rectangle(int width, int height) {
+    this->width = width;
+    this->height = height;
 }
 
 // IMPLEMENTATION of member functions of Rectangle class

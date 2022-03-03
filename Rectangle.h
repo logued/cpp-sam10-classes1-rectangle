@@ -16,11 +16,14 @@
  * - defining constructors, constructor overloading
  * - member function definitions (with no implementation)
  */
-
+#include <string>
+using namespace std;
 class Rectangle
 {
-private:                    // access specifier "private"
-    int width, height;      // member data
+private:        // access specifier "private"
+    int width;  // member data
+    int height;
+
 public:
     Rectangle();            // no-argument constructor
     Rectangle(int, int);    // constructor

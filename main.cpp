@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "Rectangle.h"    // copies definition of class into this file
-
 using namespace std;
 
 // function prototypes
