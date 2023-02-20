@@ -1,4 +1,6 @@
-#pragma once
+#ifndef CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
+#define CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
+
 /**  Rectangle class definition.    Rectangle.h
  *
  * HEADER File
@@ -16,19 +18,24 @@
  * - defining constructors, constructor overloading
  * - member function definitions (with no implementation)
  */
+
 #include <string>
-using namespace std;
+
 class Rectangle
 {
 private:        // access specifier "private"
     int width;  // member data
     int height;
+    std::string colour; // avoid "using namespace std" in header files, and use "std::" qualifier instead
+                        // not using this field in rest of this sample to avoid complexity
 
 public:
     Rectangle();            // no-argument constructor
     Rectangle(int, int);    // constructor
 
-    int area(void);         // function definitions (no implementation)
-    int getWidth(void);
-    int getHeight(void);
+    int area(void) const;         // function definitions (no implementation)
+    int getWidth(void) const;
+    int getHeight(void) const;
 };
+
+#endif //CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
