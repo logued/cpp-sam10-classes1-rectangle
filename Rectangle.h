@@ -33,9 +33,9 @@ public:
     Rectangle();            // no-argument constructor
     Rectangle(int, int);    // constructor
 
-    int area(void) const;         // function definitions (no implementation)
-    int getWidth(void) const;
-    int getHeight(void) const;
+    int area() const;         // function definitions (no implementation)
+    int getWidth() const;
+    int getHeight() const;
 };
 
 #endif //CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H

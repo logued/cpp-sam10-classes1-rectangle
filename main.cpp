@@ -1,4 +1,4 @@
-// Main.cpp
+// Main.cpp                                     Feb 2023
 // Demonstrates:
 // Using the Rectangle class to create and manipulate Rectangle objects
 
