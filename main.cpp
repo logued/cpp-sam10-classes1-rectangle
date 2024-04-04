@@ -1,4 +1,5 @@
 // Main.cpp
+//
 // Demonstrates:
 // Demonstrates the basics of defining a class called Rectangle
 // by defining a header file Rectangle.h and an implementation file Rectangle.cpp.

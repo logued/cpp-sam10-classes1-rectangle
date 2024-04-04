@@ -37,6 +37,7 @@ Rectangle::Rectangle(int width, int height) {  // overloaded constructor that ta
     this->height = height;
 }
 
+
 // IMPLEMENTATION of member functions of Rectangle class
 
 int Rectangle::area(void) const {           // const prevents code in this function from changing member data (field values)
