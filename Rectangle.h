@@ -2,7 +2,7 @@
 /**  Rectangle class definition.    Rectangle.h
  *
  * HEADER File
- * This C++ Header file is the Class Definition file for the Rectangle class.
+ * This C++ Header file contains the Definition of the Rectangle class.
  * In this file, we define the name of the class, the data members (fields),
  * the member functions, and the constructors and destructors.
  * Note that the implementation of member functions is normally NOT placed
@@ -11,13 +11,13 @@
  *
  * Demonstrates:
  * - defining a class structure
- * - access specifiers [  private: and public: ]
+ * - using access specifiers [  private: and public: ]
  * - defining member data
  * - defining constructors, constructor overloading
  * - member function definitions (with no implementation)
+ * - use of 'const' functions
  */
-#include <string>
-using namespace std;
+
 class Rectangle
 {
 private:        // access specifier "private"
@@ -28,7 +28,7 @@ public:
     Rectangle();            // no-argument constructor
     Rectangle(int, int);    // constructor
 
-    int area(void);         // function definitions (no implementation)
-    int getWidth(void);
-    int getHeight(void);
+    int area(void) const;         // function definitions (no implementation)
+    int getWidth(void) const;       // 'const' functions prevent function from modifying the field data
+    int getHeight(void) const;      ///   .. effectively making the functions 'accessors' (i.e. read access only)
 };

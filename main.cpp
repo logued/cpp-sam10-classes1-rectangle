@@ -1,12 +1,15 @@
 // Main.cpp
 // Demonstrates:
-// Using the Rectangle class to create and manipulate Rectangle objects
+// Demonstrates the basics of defining a class called Rectangle
+// by defining a header file Rectangle.h and an implementation file Rectangle.cpp.
+//
+// In main() we create (instantiate) and use a number of Rectangle objects.
 
 #include <iostream>
 #include "Rectangle.h"    // copies definition of class into this file
 using namespace std;
 
-// function prototypes
+// function prototypes declare the signature of functions implemented below.
 void display_pass_by_value( Rectangle );
 void display_pass_by_reference( Rectangle& );
 void display_pass_using_pointer( Rectangle* );
@@ -14,8 +17,10 @@ void display_pass_using_pointer( Rectangle* );
 int main() {
     cout << "Rectangle class, constructors and passing objects to functions." << endl;
 
-    // This line instantiates a Rectangle object r1 using no-argument constructor
-    // (Unlike Java, this creates a new object on the Stack)
+    // This line instantiates a Rectangle object r1 using the no-argument constructor.
+    // (The no-argument constructor is implemented to initialize width and height to 1)
+    // The object r1 is created on the Stack. (Unlike in Java, where all new objects are created on the Heap)
+    //
     Rectangle r1;
     cout << "Rectangle r1 area: " << r1.area() << endl;
 
@@ -23,20 +28,25 @@ int main() {
     cout << "Rectangle r2 area: " << r2.area() << endl;
 
     // 'uniform initialization' style for construction - (preferred modern syntax)
-    Rectangle r3{ 5, 6 }; // instantiate an object and call constructor
+    Rectangle r3{ 5, 6 }; // instantiate an object using an initializer (which calls constructor)
     cout << "Rectangle r3 area: " << r3.area() << endl;
 
-    Rectangle r4 = r3;  // bitwise copy of r3 member data into r4 (whole object is copied)
+    Rectangle r4 = r3;  // create new object r4, and copy all r3 member data into r4 ( a bitwise copy)
     cout << "Rectangle r4 area: " << r4.area() << endl;
 
     // various ways to pass a class Object to a function
+    // pass copy of r3 object as an argument
     display_pass_by_value(r3);
 
+    // pass a reference to r3 ias argument ( determined as the parameter is a reference)
     display_pass_by_reference(r3);
 
+    // get the address of r3 and pass that address as an argument (as a pointer parameter is declared)
     display_pass_using_pointer(&r3);    // get and pass the address of the object
 
     return 0;
+
+    // One exit of main, all variables and objects are freed up from the stack.
 }
 
 void display_pass_by_value(Rectangle rect)
