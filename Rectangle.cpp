@@ -13,11 +13,6 @@
  * in order to use th eRectangle class in the code.
  * */
 
-// Preprocessor directives to prevent the file Rectangle.h being included in the
-//  program more than once. Note the closing #endif at the bottom of the file.
-//
-#ifndef CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
-#define CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
 
 #include "Rectangle.h"      // copies in the Rectangle.h class definition
 

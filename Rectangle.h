@@ -1,4 +1,12 @@
-#pragma once
+// #pragma once
+// Preprocessor directives to prevent the file Rectangle.h being included in the
+//  program more than once. Note the closing #endif at the bottom of the file.
+//
+#ifndef CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
+#define CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
+
+// alternatively, use the #pragma once   statement
+
 /**  Rectangle class definition.    Rectangle.h
  *
  *
@@ -33,3 +41,5 @@ public:
     int getWidth(void) const;       // 'const' functions prevent function from modifying the field data
     int getHeight(void) const;      ///   .. effectively making the functions 'accessors' (i.e. read access only)
 };
+
+#endif //CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
