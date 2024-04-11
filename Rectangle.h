@@ -9,7 +9,6 @@
 
 /**  Rectangle class definition.    Rectangle.h
  *
- *
  * HEADER File
  * This C++ Header file contains the Definition of the Rectangle class.
  * In this file, we define the name of the class, the data members (fields),

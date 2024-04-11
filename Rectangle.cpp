@@ -44,4 +44,3 @@ int Rectangle::getWidth(void) const { return width; }
 int Rectangle::getHeight(void) const { return height; }
 
 
-#endif //CPP_SAM10_CLASSES1_RECTANGLE_RECTANGLE_H
